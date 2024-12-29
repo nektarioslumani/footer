@@ -1,0 +1,112 @@
+/* Γενικές Ρυθμίσεις */
+body {
+    margin: 0;/* Αφαίρεση εξωτερικών περιθωρίων του σώματος */
+    font-family: Arial, sans-serif;/* Ορισμός γραμματοσειράς */
+    background-color: #091540; /*  φόντο */
+    color: #ffffff; /* Λευκό κείμενο */
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #091540; /* χρώμα στο footer */
+    padding: 40px 20px; /* Εσωτερικά περιθώρια */
+    color: #ffffff; /* Λευκό κείμενο */
+  }
+  
+  .footer-container {
+    display: flex; /* Flexbox για στοίχιση */
+    justify-content: space-between; /* Απόσταση μεταξύ των στηλών */
+    flex-wrap: wrap; /* Στοίχιση σε μικρές οθόνες */
+    max-width: 1200px; /* Μέγιστο Πλάτος του container */
+    margin: 0 auto; /* Κεντραρισμένο container */
+  }
+  
+  /* Logo Section */
+  .footer-logo {
+    flex: 10px;/* Προσαρμογή πλάτους ώστε να παίρνει ίσο χώρο */
+    min-width: 250px; /* Ελάχιστο πλάτος */
+    margin-bottom: 20px;/* Κάτω περιθώριο  */
+
+  }
+  
+  .footer-logo h2 {
+    font-size: 24px;/* Μέγεθος γραμματοσειράς τίτλου */
+    margin-bottom: 15px;/* Κάτω περιθώριο  */
+
+  }
+  
+  .footer-logo p {
+    font-size: 14px;/* Μέγεθος γραμματοσειράς  */
+    line-height: 1.6; /* Ύψος γραμμής (1.6 μεγαλύτερο από το μέγεθος γραμματοσειράς) */
+    margin-bottom: 20px;/* Κάτω περιθώριο  */
+  }
+  
+  
+  .social-icon {
+    display: flex; /* Στοίχιση εικόνων σε οριζόντια γραμμή */
+    gap: 10px; /* Απόσταση μεταξύ των εικονιδίων */
+  }
+  
+  .social-icon img {
+    width: 24px;  /* Πλάτος εικονιδίων */
+    height: auto; /* Διατήρηση αναλογιών εικονιδίων */
+  }
+  
+  /* Στήλη Επαφών */
+  .footer-section {
+    flex: 10px;/* Προσαρμογή πλάτους στηλών */
+    min-width: 200px; /* Ελάχιστο πλάτος στήλης  */
+    margin-bottom: 20px;/* Κάτω περιθώριο  */
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;/* Μέγεθος γραμματοσειράς τίτλου */
+    margin-bottom: 15px;/* Κάτω περιθώριο  */
+
+  }
+  
+  .footer-section p {
+    font-size: 14px;/* Μέγεθος γραμματοσειράς κειμένου */
+    line-height: 1.6;/* Ύψος γραμμής */
+    margin-bottom: 10px;/* Κάτω περιθώριο  */
+    display: flex; /* Για να στοιχίζονται εικόνες και κείμενο */
+    align-items: center;/* Κάθετη στοίχιση */
+  }
+  
+  .footer-section img.icon {
+    width: 20px; /* Πλάτος εικονιδίων */
+    height: auto;/* Διατήρηση αναλογιών */
+    margin-right: 10px; /* Απόσταση δεξιά μεταξύ εικόνας και κειμένου */
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center; /* Κεντρική στοίχιση */
+    margin-top: 20px;/* Πάνω περιθώριο 20px */
+    font-size: 12px; /* Μικρότερο κείμενο */
+    color: #ffffff;/* Λευκό χρώμα  */
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;/* Περιθώριο  */
+    display: inline-block;/* Εμφάνιση γραμμής κειμένου */
+  }
+  
+  
+  /*  Σχεδιασμός */
+  @media (max-width: 768px) {
+    .footer-container {/* Κανόνες για μικρές οθόνες */
+      flex-direction: column; /* Στοίχιση σε στήλες */
+      align-items: center; /* Κεντρική στοίχιση */
+    }
+  
+    .footer-logo, .footer-section {
+      text-align: center; /* Κεντραρισμένο κείμενο */
+      min-width: 100%; /* Πλάτος πλήρους οθόνης */
+    }
+  
+    .social-icon {
+      justify-content: center; /* Κεντραρισμένα εικονίδια */
+    }
+  }
+  
